@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid moma</title>
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Jockey One', sans-serif;
+        }
+        h2{
+            font-size: 2.2em;
+            line-height: 0.9;
+        }
+        h3{
+            font-size: 1em;
+        }
+    
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 200px);
+        }
+        .caixa{
+            background: white;
+        }
+        .c1{
+            background: #FFCD00;
+            
+        }
+        .c4{
+            background: blue;
+        }
+        .c5{
+            background: black;
+            color: white;
+        
+            
+        }
+        .c1, .c4, .c5{
+            grid-column: 2 span;
+            display: flex;
+            flex-direction: column;
+            padding: 1.3em 2.3em;
+            
+        }
+        .c2, .c3, .c6{
+            grid-column: 3 span;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .c2 img{
+            object-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="caixa c1">
+      <h2>La cosas del querer</h2>
+      <h3>Flavita Banana</h3>
+      </div>
+      <div class="caixa c2">
+      <img src="img/archivoscosmicos_5.jpg" alt="">
+      </div>
+      <div class="caixa c3">
+      <img src="img/creator_110013.jpg" alt="">
+      </div>
+      <div class="caixa c4">
+      <h2>Rituals</h2>
+      <h3>Alessandro Alvvino</h3>
+      </div>
+      <div class="caixa c5">
+      <h2>Retener lo obsdente</h2>
+      <h3>Jonh Maeda</h3>
+      </div>
+      <div class="caixa c6">
+      <img src="img/1487627123_803126_1487700619_album_normal.jpg" alt="">
+      </div>
+       </div>
+</body>
+</html>
